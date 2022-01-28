@@ -1,0 +1,66 @@
+/* map */
+
+$redes: (
+    instagram: blue,
+    facebook: red
+);
+
+@each $nombre, $valor in $redes {
+    .txt-#{$nombre} {
+        background-color: $valor;
+    }
+}
+
+/* map get */
+
+$colores: (
+    principal: red,
+    base: yellow,
+    fondo: green
+);
+
+.texto {
+    background: map-get($colores, base);
+}
+
+.titulos {
+    font-size: 30px;
+    padding: 10px 30px 30px 10px;
+    text-align: center;
+}
+
+.titulos-agregados {
+    @extend .titulos;
+    color: red;
+}
+
+/* mixins */
+
+@mixin redes {
+    width: 100%;
+    height: auto;
+    display: block;
+    text-align: center;
+}
+
+.redes-1 {
+    @include redes;
+    background: blue;
+}
+
+.redes-2 {
+    @include redes;
+    background: aqua;
+}
+
+
+/* reciclado */
+
+@mixin redes ($col, $font) {
+    color: $col;
+    font-size: $font;
+}
+
+.redes-3 {
+    @include redes (ORANGE, 20px);
+}

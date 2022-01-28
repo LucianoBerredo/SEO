@@ -1,0 +1,47 @@
+/* map */
+.txt-instagram {
+  background-color: blue;
+}
+
+.txt-facebook {
+  background-color: red;
+}
+
+/* map get */
+.texto {
+  background: yellow;
+}
+
+.titulos, .titulos-agregados {
+  font-size: 30px;
+  padding: 10px 30px 30px 10px;
+  text-align: center;
+}
+
+.titulos-agregados {
+  color: red;
+}
+
+/* mixins */
+.redes-1 {
+  width: 100%;
+  height: auto;
+  display: block;
+  text-align: center;
+  background: blue;
+}
+
+.redes-2 {
+  width: 100%;
+  height: auto;
+  display: block;
+  text-align: center;
+  background: aqua;
+}
+
+/* reciclado */
+.redes-3 {
+  color: ORANGE;
+  font-size: 20px;
+}
+/*# sourceMappingURL=main.css.map */
